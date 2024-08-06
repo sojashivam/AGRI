@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Crop Yield Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Advanced Crop Yield Predictor</h1>
+    </header>
+    
+    <main>
+        <div id="input-section">
+            <form id="prediction-form">
+                <fieldset>
+                    <legend>Input Details</legend>
+                    
+                    <label for="number-of-plants">Number of Plants:</label>
+                    <input type="number" id="number-of-plants" placeholder="Enter number of plants" required>
+                    
+                    <label for="weather-condition">Weather Condition:</label>
+                    <select id="weather-condition">
+                        <option value="normal">Normal</option>
+                        <option value="rainy">Rainy</option>
+                        <option value="dry">Dry</option>
+                        <option value="extreme">Extreme</option>
+                    </select>
+                    
+                    <label for="soil-health">Soil Health (1 to 10):</label>
+                    <input type="number" id="soil-health" min="1" max="10" placeholder="Enter soil health rating" required>
+                    
+                    <label for="crop-management">Crop Management Techniques:</label>
+                    <select id="crop-management">
+                        <option value="standard">Standard</option>
+                        <option value="optimized">Optimized</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    
+                    <button type="submit">Predict Yield</button>
+                </fieldset>
+            </form>
+        </div>
+        
+        <div id="results">
+            <h2>Prediction Results</h2>
+            <canvas id="yield-chart"></canvas>
+            <div id="suggestions"></div>
+        </div>
+        
+        <div id="data-visualization">
+            <h2>Detailed Insights</h2>
+            <!-- chart wala DESCRIPTION idhar aa jayega -->
+        </div>
+    </main>
+
+
+
+    
+    <script src="calculator.js"></script>
+</body>
+</html>

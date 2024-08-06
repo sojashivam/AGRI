@@ -1,0 +1,67 @@
+/* Custom Styles for Alignment */
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40; /* Dark background */
+    background-image: url('./tim-mossholder-xDwEa2kaeJA-unsplash.jpg');
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+/* Custom Dropdown Button Styles */
+.bd-mode-toggle .btn-bd-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.bd-mode-toggle .btn-bd-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    color: white;
+}
+
+main .btn {
+    color: #0d6efd;
+}
+
+/* Link Styles */
+a {
+    color: #0d6efd;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+
+.navbar{
+    gap: 10px;
+}
+
+.agri h3{
+    color: black;
+}
+
+.agri a{
+    color: black;
+}
